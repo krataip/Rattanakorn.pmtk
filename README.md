@@ -4,5 +4,5 @@
 * Test2
 ## My krataip
 
-[My Profile](https://krataip.github.io/Rattanakorn.pmtk/Assign1)
+[My Profile](https://krataip.github.io/Rattanakorn.pmtk/assign1)
 
