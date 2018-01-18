@@ -2,7 +2,7 @@
 ## My Rattanakorn
 * ~~Test1~~
 * **Test2**
-⋅⋅1. Test3 
+
 ## My krataip
 ![alt text](https://github.com/krataip/Rattanakorn.pmtk/blob/master/profile.jpg "Logo Title Pro")
 
