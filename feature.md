@@ -1,4 +1,4 @@
-There are many Git workflows out there, I heavily suggest also reading the atlassian.com [Git Workflow][article] article as there is more detail then presented here.  
+List Feature In Your Project
 
 The two prevailing workflows are [Gitflow][gitflow] and [feature branches][feature]. IMHO, being more of a subscriber to continuous integration, I feel that the feature branch workflow is better suited. 
 
@@ -7,8 +7,6 @@ When using Bash in the command line, it leaves a bit to be desired when it comes
 ## Basic branching
 
 When working with a centralized workflow the concepts are simple, `master` represented the official history and is always deployable. With each now scope of work, aka feature, the developer is to create a new branch. For clarity, make sure to use descriptive names like `transaction-fail-message` or `github-oauth` for your branches.
-
-**#Protip:** Although you may have a feature like 'user login and registration`, this is not considered appropriate to create a feature branch at this level, there is too much work to be done. It is better to break these large deliverables down to smaller bits of work that can be continuously integrated into the project. Remember, commit early and often. 
 
 Before you create a branch, be sure you have all the upstream changes from the `origin/master` branch. 
 
@@ -46,12 +44,6 @@ No. There is a command that that allows me to create a new branch from any other
 In that example, say I was in branch 	`github-oauth` and I needed to create a new branch and then checkout the new branch? By adding `master` at the end of that command, Git will create a new branch from master and then move me (checkout) to that new branch. 
 
 This is a nice command, but make sure you understand what you are doing before you do this. Creating bad branches can cause a real headache when trying to merge back into master. 
-
-## Branch management
-
-As I am working on my new feature branch, it is a good idea to commit often. This allows me to move forward without fear that if something goes wrong, or you have to back out for some reason, I don't lose too much work. Think of committing like that save button habit you have so well programed into you. 
-
-Each commit also tells a little bit about what I just worked on. That's important when other devs on the team are reviewing my code. It's better to have more commits with messages that explain the step versus one large commit that glosses over important details. 
 
 ### Commit your code
 
@@ -199,10 +191,6 @@ So let's assume that I created a feature branch, edited code and pushed it to th
 
 		$ git push origin --delete my-feature-branch
 		
-## Shortcuts using aliases
-
-There are some steps in there that we should just be doing all the time. What about making a single command alias that will cycle through all these commands just so we know things are always in good shape? Yup, we can do that. 
-
 ### In Bash
 
 Using Git and Bash is like using a zipper and pants. They just go together. Creating a Bash alias is extremely simple. From your Terminal, enter
@@ -219,9 +207,6 @@ The alias `dskil` is useful for removing annoying `.DS_Store` files. You should 
 
 With this in your `.bash_profile`, you simply need to enter `refresh` in the command line and POW! 
 
-### In Powershell
-
-If you are on Windows and using Powershell, you can use the same aliases, but the set up is different. The article [Windows PowerShell Aliases][WinPower] is a good tutorial of the process. 
 
 ## Summary
 
